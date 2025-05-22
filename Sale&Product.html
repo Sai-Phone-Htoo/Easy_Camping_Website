@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                         <!-- Navbar -->
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                                <div class="container">
+                                    <a class="navbar-brand" href="#">  <i class="fas fa-tree me-2"></i>Easy Camping</a>
+                        
+                                <form class="d-flex search-bar">
+                                        <div class="input-wrapper">
+                                            <input class="form-control" type="search" placeholder="Search for great gear & clothing" aria-label="Search">
+                                            <i class="fas fa-search search-icon"></i>
+                                        </div>
+                                    </form>
+                        
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav ms-auto">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="CampingIndex.html">Home</a>
+                                            </li>
+                                            <!-- Dropdown for Products -->
+                        
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="Sale&Product.html"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Products
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="Sale&Product.html">All Products</a></li>
+                                                    <li><a class="dropdown-item" href="Sale&Product.html#camping-tent">Tents & Shelters</a></li>
+                                                    <li><a class="dropdown-item" href="Sale&Product.html#sleeping-gear">Sleeping gear</a></li>
+                                                    <li><a class="dropdown-item" href="Sale&Product.html#camping-backpack">Backpacks & Bags</a></li>
+                                                    <li><a class="dropdown-item" href="Sale&Product.html#clothing-men">Men-Wear</a></li>
+                                                    <li><a class="dropdown-item" href="Sale&Product.html#clothing-women">Women-Wear</a></li>
+                                                    <li><a class="dropdown-item" href="Sale&Product.html#camping-safety">Navigation & Safety</a></li>
+                                                    <li><a class="dropdown-item" href="Sale&Product.html#survival-tools">Survival & Multi Tools</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    
+                                                </ul>
+                                            </li>
+                        
+                                            
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="aboutus.html">About</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="contact.html">Contact</a>
+                                            </li>
+                                        
+                                            <!-- Cart & Profile Icons (Font Awesome) -->
+                                            <li class="nav-item ms-3" id="User-icon">
+                                                <a class="nav-link" href="Login.html">
+                                                    <i class="fas fa-user"></i>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ms-3" id="Cart-icon">
+                                                <a class="nav-link" href="cart.html">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <span class="cart-badge">0</span> 
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <div class="carousel-section" id="carousel-section">
+                                <div class="carousel-wrapper">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-slide show">
+                                        <img src="Images/backhik11.jpg" alt="Camping Backpack">
+                                        <div class="carousel-caption">
+                                            <h1>Trailblazer Backpack</h1>
+                                            <p>High-quality 65L capacity with ergonomic suspension</p>
+                                        </div>
+                                    </div>
+                                
+                                
+                                    <!-- Slide 2 -->
+                                    <div class="carousel-slide show">
+                                        <img src="Images/camptool3.jpg" alt="Camping Gear">
+                                        <div class="carousel-caption">
+                                            <h1>Best Camping Gear</h1>
+                                            <p>High-quality camping equipment for your next adventure</p>
+                                        </div>
+                                    </div>
+                                    
+                            
+                                    <!-- Slide 3 -->
+                                    <div class="carousel-slide">
+                                        <img src="Images/tent9.jpg" alt="Tent Gear">
+                                        <div class="carousel-caption">
+                                            <h1>Comfort in Every Tent</h1>
+                                            <p>Choose tents designed for real explorers</p>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Slide 4 -->
+                                    <div class="carousel-slide">
+                                        <img src="Images/sleepb11.jpg" alt="Campfire">
+                                        <div class="carousel-caption">
+                                            <h1>Arctic Sleeping Bag</h1>
+                                            <p>Rated for -20°F with premium insulation</p>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Slide 5 -->
+                                    <div class="carousel-slide">
+                                        <img src="Images/cstove3.jpg" alt="Tent Gear">
+                                        <div class="carousel-caption">
+                                            <h1>Compact Camp Stove</h1>
+                                            <p>Ultralight stove with wind protection</p>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Slide 6 -->
+                                    <div class="carousel-slide">
+                                        <img src="Images/slight1.jpg" alt="Tent Gear">
+                                        <div class="carousel-caption">
+                                            <h1>Outdoor Headlamp</h1>
+                                            <p>Stay hands-free and illuminated with this powerful LED headlamp</p>
+                                        </div>
+                                    </div>
+
+                                     <!-- Slide 7 -->
+                                    <div class="carousel-slide">
+                                        <img src="Images/bino3.jpg" alt="Tent Gear">
+                                        <div class="carousel-caption">
+                                            <h1> high-powered binoculars</h1>
+                                            <p>Perfect for wildlife watching, birding, or scenic landscapes. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="custom-hr1">
+                
+                         <!-- Scrollable Product Row1-->
+                            <div class= "scrollable-products1 py-5"> 
+                                        <div class="container">
+                                                    <h2 class="mb-4" id="camping-tent">Tents & Shelters</h2>
+                                                    <div class="product-scroller">
+                                                        <div class="product-row">
+                                                            
+                                                        <div class="product-card1" data-id="9" data-name="Explorer Pro Tent" data-price="289.99" data-image="Images/tent1.jpg">
+                                                                <img src="Images/tent1.jpg" alt="4-Season Camping Tent">
+                                                                <div class="product-info">
+                                                                    <h3>Summit Alpine Tent</h3>
+                                                                    <p class="price">$289.99 <span class="original">$349.99</span></p>
+                                                                    <div class="rating">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                        <span>(28)</span>
+                                                                    </div>
+                                                                    <button class="add-to-cart">Add to Cart</button>
+                                                                </div>
+                                                                <div class="sale-badge">-17%</div>
+                                                            </div>
+                                                            
+                                                        
+                                                            <div class="product-card1" data-id="10" data-name="Explorer Pro Tent" data-price="59.99" data-image="Images/tent2.jpg">
+                                                                <img src="Images/tent2.jpg" alt="Camping Tent">
+                                                                <div class="product-info">
+                                                                    <h3>Camping Tent</h3>
+                                                                    <p class="price">$59.95 <span class="original">$79.95</span></p>
+                                                                    <div class="rating">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <span>(136)</span>
+                                                                    </div>
+                                                                    <button class="add-to-cart">Add to Cart</button>
+                                                                </div>
+                                                                <div class="sale-badge">BESTSELLER</div>
+                                                            </div>
+                                                            
+                                                        
+                                                            <div class="product-card1" data-id="11" data-name="Explorer Pro Tent" data-price="45.99" data-image="Images/tent3.jpg">
+                                                                <img src="Images/tent3.jpg" alt="Explorer Pro Tent">
+                                                                <div class="product-info">
+                                                                    <h3>Explorer Pro Tent</h3>
+                                                                    <p class="price">$45.50</p>
+                                                                    <div class="rating">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star-half-alt"></i>
+                                                                        <span>(89)</span>
+                                                                    </div>
+                                                                    <button class="add-to-cart">Add to Cart</button>
+                                                                </div>
+                                                                <div class="sale-badge">NEW</div>
+                                                            </div>
+                                                            
+                                                        
+                                                            <div class="product-card1" data-id="12" data-name="Explorer Pro Tent" data-price="34.99" data-image="Images/tent4.jpg">
+                                                                <img src="Images/tent4.jpg" alt="Explorer Pro Tent">
+                                                                <div class="product-info">
+                                                                    <h3>Explorer Pro Tent</h3>
+                                                                    <p class="price">$34.99 <span class="original">$39.99</span></p>
+                                                                    <div class="rating">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <span>(214)</span>
+                                                                    </div>
+                                                                    <button class="add-to-cart">Add to Cart</button>
+                                                                </div>
+                                                                <div class="sale-badge">NEW</div>
+                                                            </div>
+                                                            
+                                                        
+                                                            <div class="product-card1" data-id="13" data-name="Explorer Pro Tent" data-price="129.99" data-image="Images/tent5.jpg">
+                                                                <img src="Images/tent5.jpg" alt="Explorer Pro Tent">
+                                                                <div class="product-info">
+                                                                    <h3>Explorer Pro Tent</h3>
+                                                                    <p class="price">$129.99</p>
+                                                                    <div class="rating">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="far fa-star"></i>
+                                                                        <span>(42)</span>
+                                                                    </div>
+                                                                    <button class="add-to-cart">Add to Cart</button>
+                                                                </div>
+                                                                <div class="sale-badge">NEW</div>
+                                                            </div>
+                                                            
+                                                            <!-- Product Card 6 -->
+                                                            <div class="product-card1" data-id="14" data-name="Explorer Pro Tent" data-price="159.99" data-image="Images/tent6.jpg">
+                                                                <img src="Images/tent6.jpg" alt="Explorer Pro Tent">
+                                                                <div class="product-info">
+                                                                    <h3>Explorer Pro Tent</h3>
+                                                                    <p class="price">$159.99 <span class="original">$189.99</span></p>
+                                                                    <div class="rating">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star-half-alt"></i>
+                                                                        <span>(73)</span>
+                                                                    </div>
+                                                                    <button class="add-to-cart">Add to Cart</button>
+                                                                </div>
+                                                                <div class="sale-badge">-16%</div>
+                                                            </div>
+
+                                                            <!-- Product Card 7 -->
+                                                            <div class="product-card1" data-id="15" data-name="Explorer Pro Tent" data-price="179.99" data-image="Images/tent7.jpg">
+                                                                <img src="Images/tent7.jpg" alt="Family camping tent">
+                                                                <div class="product-info">
+                                                                    <h3>Family camping tent</h3>
+                                                                    <p class="price">$179.99 <span class="original">$199.99</span></p>
+                                                                    <div class="rating">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star-half-alt"></i>
+                                                                        <span>(73)</span>
+                                                                    </div>
+                                                                    <button class="add-to-cart">Add to Cart</button>
+                                                                </div>
+                                                                <div class="sale-badge">-4%</div>
+                                                            </div>
+
+                                                            
+                                                            <div class="product-card1" data-id="15" data-name="Explorer Pro Tent" data-price="159.99" data-image="Images/tent8.jpg">
+                                                                <img src="Images/tent8.jpg" alt="Hiking Backpack">
+                                                                <div class="product-info">
+                                                                    <h3>camping tent</h3>
+                                                                    <p class="price">$159.99 <span class="original">$189.99</span></p>
+                                                                    <div class="rating">
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star"></i>
+                                                                        <i class="fas fa-star-half-alt"></i>
+                                                                        <span>(73)</span>
+                                                                    </div>
+                                                                    <button class="add-to-cart">Add to Cart</button>
+                                                                </div>
+                                                                <div class="sale-badge">-8%</div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                        </div>
+                            </div>
+                           
+                            <hr class="custom-hr">
+                         <!-- Scrollable Product Row2-->
+                            <div class="scrollable-products py-5">
+                                <div class="container">
+                                    <h2 class="mb-4" id="sleeping-gear">Sleeping gear</h2>
+                                    <div class="product-scroller">
+                                        <div class="product-row">
+                                            <!-- Product Card 1 -->
+                                            <div class="product-card1" data-id="16" data-name="Sleeping Bag" data-price="289.99" data-image="Images/sleepb7.jpg">
+                                                <img src="Images/sleepb7.jpg" alt="sleeping bag">
+                                                <div class="product-info">
+                                                    <h3>Sleeping Bag</h3>
+                                                    <p class="price">$289.99 <span class="original">$349.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <span>(28)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-17%</div>
+                                            </div>
+                                            
+                                            <!-- Product Card 2 -->
+                                            <div class="product-card1" data-id="17" data-name="Sleeping Bag" data-price="270.95" data-image="Images/sleepb2.jpg">
+                                                <img src="Images/sleepb2.jpg" alt="Sleeping Bag">
+                                                <div class="product-info">
+                                                    <h3>Sleeping Bag</h3>
+                                                    <p class="price">$270.95 <span class="original">$290.95</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span>(136)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">BESTSELLER</div>
+                                            </div>
+                                            
+                                            <!-- Product Card 3 -->
+                                            <div class="product-card1" data-id="18" data-name="Sleeping Bag" data-price="200.00" data-image="Images/sleepb9.jpg">
+                                                <img src="Images/sleepb9.jpg" alt="Sleeping Bag">
+                                                <div class="product-info">
+                                                    <h3>Sleeping Bag</h3>
+                                                    <p class="price">$200.00</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <span>(89)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Product Card 4 -->
+                                            <div class="product-card1" data-id="19" data-name="Sleeping Bag" data-price="289.99" data-image="Images/sleepb8.jpg">
+                                                <img src="Images/sleepb8.jpg" alt="Sleeping Bag">
+                                                <div class="product-info">
+                                                    <h3>Sleeping Bag</h3>
+                                                    <p class="price">$289.99 <span class="original">$300.00</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span>(214)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">NEW</div>
+                                            </div>
+                                            
+                                            <!-- Product Card 5 -->
+                                            <div class="product-card1" data-id="20" data-name="Sleeping Bag" data-price="322.99" data-image="Images/sleepb12.jpg">
+                                                <img src="Images/sleepb12.jpg" alt="Sleeping Bag">
+                                                <div class="product-info">
+                                                    <h3>Sleeping Bag</h3>
+                                                    <p class="price">$322.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <span>(42)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Product Card 6 -->
+                                            <div class="product-card1" data-id="21" data-name="Sleeping Bag" data-price="299.99" data-image="Images/sleepb18.jpg">
+                                                <img src="Images/sleepb18.jpg" alt="Sleeping Bag">
+                                                <div class="product-info">
+                                                    <h3>Sleeping Bag</h3>
+                                                    <p class="price">$299.99 <span class="original">$299.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <span>(73)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-16%</div>
+                                            </div>
+
+                                             <!-- Product Card 7 -->
+                                            <div class="product-card1" data-id="22" data-name="Sleeping Bag" data-price="289.99" data-image="Images/sleepb14.jpg">
+                                                <img src="Images/sleepb14.jpg" alt="Hiking Backpack">
+                                                <div class="product-info">
+                                                    <h3>Sleeping Bag</h3>
+                                                    <p class="price">$289.99 <span class="original">$299.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <span>(73)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-16%</div>
+                                            </div>
+
+                                             <!-- Product Card 8 -->
+                                            <div class="product-card1" data-id="23" data-name="Sleeping Bag" data-price="400.00" data-image="Images/sleepb15.jpg">
+                                                <img src="Images/sleepb15.jpg" alt="Hiking Backpack">
+                                                <div class="product-info">
+                                                    <h3>Sleeping Bag</h3>
+                                                    <p class="price">$400.00 <span class="original">$420.00</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <span>(73)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-16%</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                  
+                            </div>
+                            </div>
+                            <hr class="custom-hr">
+
+                         <!-- Scrollable Product Row3-->
+                            <div class="scrollable-products py-5">
+                                <div class="container">
+                                    <h2 class="mb-4" id="camping-backpack">Backpacks & Bags</h2>
+                                    <div class="product-scroller">
+                                        <div class="product-row">
+                                            <!-- Product Card 1 -->
+                                            <div class="product-card1" data-id="24" data-name="Camping backpack" data-price="289.99" data-image="Images/backp7.jpg">
+                                                <img src="Images/backp7.jpg" alt="4-Season Camping Tent">
+                                                <div class="product-info">
+                                                    <h3>Camping Backpack</h3>
+                                                    <p class="price">$289.99 <span class="original">$349.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <span>(28)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-17%</div>
+                                            </div>
+                                            
+                                            <!-- Product Card 2 -->
+                                            <div class="product-card1" data-id="25" data-name="Sleeping Bag" data-price="299.99" data-image="Images/backp4.jpg">
+                                                <img src="Images/backp4.jpg" alt="Foldable Camp Chair">
+                                                <div class="product-info">
+                                                    <h3>Camping Backpack</h3>
+                                                    <p class="price">$299.99 <span class="original">$310.00</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span>(136)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">BESTSELLER</div>
+                                            </div>
+                                            
+                                            <!-- Product Card 3 -->
+                                            <div class="product-card1" data-id="26" data-name="Sleeping Bag" data-price="299.99" data-image="Images/backp5.jpg">
+                                                <img src="Images/backp5.jpg" alt="Portable Camping Stove">
+                                                <div class="product-info">
+                                                    <h3>Camping Backpack</h3>
+                                                    <p class="price">$299.00</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <span>(89)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Product Card 4 -->
+                                            <div class="product-card1" data-id="27" data-name="Sleeping Bag" data-price="159.99" data-image="Images/backp8.jpg">
+                                                <img src="Images/backp8.jpg" alt="LED Camping Lantern">
+                                                <div class="product-info">
+                                                    <h3>Camping Backpack</h3>
+                                                    <p class="price">$159.99 <span class="original">$189.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span>(214)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">NEW</div>
+                                            </div>
+                                            
+                                            <!-- Product Card 5 -->
+                                            <div class="product-card1" data-id="28" data-name="Sleeping Bag" data-price="159.99" data-image="Images/backp12.jpg">
+                                                <img src="Images/backp12.jpg" alt="Hiking Boots">
+                                                <div class="product-info">
+                                                    <h3>Camping Backpack</h3>
+                                                    <p class="price">$159.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <span>(42)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Product Card 6 -->
+                                            <div class="product-card1" data-id="29" data-name="Sleeping Bag" data-price="159.99" data-image="Images/backp15.jpg">
+                                                <img src="Images/backp15.jpg" alt="Hiking Backpack">
+                                                <div class="product-info">
+                                                    <h3>Camping Bag</h3>
+                                                    <p class="price">$159.99 <span class="original">$189.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <span>(73)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-16%</div>
+                                            </div>
+
+                                             <!-- Product Card 7 -->
+                                            <div class="product-card1" data-id="30" data-name="Sleeping Bag" data-price="159.99" data-image="Images/backp18.jpg">
+                                                <img src="Images/backp18.jpg" alt="Hiking Backpack">
+                                                <div class="product-info">
+                                                    <h3>Camping Bag</h3>
+                                                    <p class="price">$159.99 <span class="original">$189.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <span>(73)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-16%</div>
+                                            </div>
+
+                                             <!-- Product Card 8 -->
+                                            <div class="product-card1" data-id="31" data-name="Sleeping Bag" data-price="159.99" data-image="Images/backp19.jpg">
+                                                <img src="Images/backp19.jpg" alt="Hiking Backpack">
+                                                <div class="product-info">
+                                                    <h3>Camping Backpack</h3>
+                                                    <p class="price">$159.99 <span class="original">$189.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <span>(73)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-16%</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="custom-hr">
+                         <!-- Scrollable Product Row4-->
+                            <div class="scrollable-products py-5">
+                                <div class="container">
+                                    <h2 class="mb-4" id="clothing-men">Clothing for Men</h2>
+                                    <div class="product-scroller">
+                                        <div class="product-row">
+                            
+                                            <!-- Product Card 1 -->
+                                            <div class="product-card1" data-id="32" data-name="Thermal Jacket" data-price="89.99" data-image="Images/cmen8.jpg">
+                                                <img src="Images/cmen8.jpg" alt="Thermal Jacket">
+                                                <div class="product-info">
+                                                    <h3>Thermal Jacket</h3>
+                                                    <p class="price">$89.99 <span class="original">$119.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                                        <span>(45)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-25%</div>
+                                            </div>
+                            
+                                            <!-- Product Card 2 -->
+                                            <div class="product-card1" data-id="33" data-name="Waterproof jacket" data-price="69.99" data-image="Images/cmen7.jpg">
+                                                <img src="Images/cmen7.jpg" alt="Waterproof Pants">
+                                                <div class="product-info">
+                                                    <h3>Waterproof jacket</h3>
+                                                    <p class="price">$69.99 <span class="original">$89.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(88)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">HOT</div>
+                                            </div>
+                            
+                                            <!-- Product Card 3 -->
+                                            <div class="product-card1" data-id="34" data-name="Breathable Hiking Shirt" data-price="39.99" data-image="Images/cmen17.jpg">
+                                                <img src="Images/cmen17.jpg" alt="Hiking Shirt">
+                                                <div class="product-info">
+                                                    <h3>Breathable Hiking Shirt</h3>
+                                                    <p class="price">$39.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                                        <span>(22)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+                            
+                                            <!-- Product Card 4 -->
+                                            <div class="product-card1" data-id="35" data-name="Camping Hoodie" data-price="49.99" data-image="Images/cmen10.jpg">
+                                                <img src="Images/cmen10.jpg" alt="Camping Hoodie">
+                                                <div class="product-info">
+                                                    <h3>Camping Hoodie</h3>
+                                                    <p class="price">$49.99 <span class="original">$69.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(31)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">NEW</div>
+                                            </div>
+                            
+                                            <!-- Product Card 5 -->
+                                            <div class="product-card1" data-id="36" data-name="Quick-Dry T-Shirt" data-price="24.99" data-image="Images/cmen11.jpg">
+                                                <img src="Images/cmen11.jpg" alt="Quick-Dry T-Shirt">
+                                                <div class="product-info">
+                                                    <h3>Quick-Dry T-Shirt</h3>
+                                                    <p class="price">$24.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                                        <span>(76)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Product Card 6 -->
+                                                    <div class="product-card1" data-id="37" data-name="Insulated Vest" data-price="59.99" data-image="Images/cmen16.jpg">
+                                                        <img src="Images/cmen16.jpg" alt="Insulated Vest">
+                                                        <div class="product-info">
+                                                            <h3>Insulated Vest</h3>
+                                                            <p class="price">$59.99 <span class="original">$79.99</span></p>
+                                                            <div class="rating">
+                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                                                <span>(61)</span>
+                                                            </div>
+                                                            <button class="add-to-cart">Add to Cart</button>
+                                                        </div>
+                                                        <div class="sale-badge">-25%</div>
+                                                    </div>
+
+                                                    <!-- Product Card 7 -->
+                                                    <div class="product-card1" data-id="38" data-name="Convertible Hiking jacket" data-price="74.99" data-image="Images/cmen14.jpg">
+                                                        <img src="Images/cmen14.jpg" alt="Convertible Hiking Pants">
+                                                        <div class="product-info">
+                                                            <h3>Convertible Hiking jacket</h3>
+                                                            <p class="price">$74.99 <span class="original">$89.99</span></p>
+                                                            <div class="rating">
+                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                                                <span>(94)</span>
+                                                            </div>
+                                                            <button class="add-to-cart">Add to Cart</button>
+                                                        </div>
+                                                        <div class="sale-badge">POPULAR</div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <hr class="custom-hr">
+
+                        <!-- Scrollable Product Row5-->
+                            <div class="scrollable-products py-5">
+                                <div class="container">
+                                    <h2 class="mb-4" id="clothing-women">Clothing for Women</h2>
+                                    <div class="product-scroller">
+                                        <div class="product-row">
+                                            <!-- Product Card 1 -->
+                            <div class="product-card1" data-id="39" data-name="Women's Thermal Jacket" data-price="129.99" data-image="Images/cwomen2.jpg">
+                                <img src="Images/cwomen2.jpg" alt="Thermal Jacket">
+                                <div class="product-info">
+                                    <h3>Women's Thermal Jacket</h3>
+                                    <p class="price">$129.99 <span class="original">$159.99</span></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                        <span>(54)</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="sale-badge">-19%</div>
+                            </div>
+
+                            <!-- Product Card 2 -->
+                            <div class="product-card1" data-id="40" data-name="Women's Waterproof jacket" data-price="89.99" data-image="Images/cwomen5.jpg">
+                                <img src="Images/cwomen5.jpg" alt="Waterproof Pants">
+                                <div class="product-info">
+                                    <h3>Women's Waterproof Pants</h3>
+                                    <p class="price">$89.99 <span class="original">$104.99</span></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                        <span>(38)</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 3 -->
+                            <div class="product-card1" data-id="41" data-name="Women's Base Layer Set" data-price="79.99" data-image="Images/cwomen6.jpg">
+                                <img src="Images/cwomen6.jpg" alt="Base Layer Set">
+                                <div class="product-info">
+                                    <h3>Women's Base Layer Set</h3>
+                                    <p class="price">$79.99</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                        <span>(27)</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 4 -->
+                            <div class="product-card1" data-id="42" data-name="Women's Hiking Shirt" data-price="64.99" data-image="Images/cwomen8.jpg">
+                                <img src="Images/cwomen8.jpg" alt="Hiking Shirt">
+                                <div class="product-info">
+                                    <h3>Women's Hiking Shirt</h3>
+                                    <p class="price">$64.99 <span class="original">$74.99</span></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                        <span>(61)</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="sale-badge">-13%</div>
+                            </div>
+
+                            <!-- Product Card 5 -->
+                            <div class="product-card1" data-id="43" data-name="Women's Quick-Dry Shorts" data-price="49.99" data-image="Images/cwomen9.jpg">
+                                <img src="Images/cwomen9.jpg" alt="Quick-Dry Shorts">
+                                <div class="product-info">
+                                    <h3>Women's Quick-Dry Shorts</h3>
+                                    <p class="price">$49.99</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                        <span>(19)</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+
+                            <!-- Product Card 6 -->
+                            <div class="product-card1" data-id="44" data-name="Women's Fleece Hoodie" data-price="99.99" data-image="Images/cwomen10.jpg">
+                                <img src="Images/cwomen10.jpg" alt="Fleece Hoodie">
+                                <div class="product-info">
+                                    <h3>Women's Fleece Hoodie</h3>
+                                    <p class="price">$99.99 <span class="original">$119.99</span></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                        <span>(45)</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="sale-badge">NEW</div>
+                            </div>
+
+                            <!-- Product Card 7 -->
+                            <div class="product-card1" data-id="45" data-name="Women's Windbreaker Jacket" data-price="109.99" data-image="Images/cwomen11.jpg">
+                                <img src="Images/cwomen11.jpg" alt="Windbreaker Jacket">
+                                <div class="product-info">
+                                    <h3>Women Windbreaker Jacket</h3>
+                                    <p class="price">$109.99 <span class="original">$139.99</span></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                        <span>(34)</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="sale-badge">-21%</div>
+                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="custom-hr">
+
+                        <!-- Scrollable Product Row6-->
+                            <div class="scrollable-products py-5">
+                                <div class="container">
+                                    <h2 class="mb-4" id="camping-safety">Navigation & Safety</h2>
+                                    <div class="product-scroller">
+                                    <div class="product-row">
+                                           <!-- Compass 1 -->
+                                            <div class="product-card1" data-id="46" data-name="Classic Compass" data-price="19.99" data-image="Images/cnav2.jpg">
+                                                <img src="Images/cnav2.jpg" alt="Classic Compass">
+                                                <div class="product-info">
+                                                    <h3>Classic Compass</h3>
+                                                    <p class="price">$19.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(87)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Compass 2 -->
+                                            <div class="product-card1" data-id="47" data-name="Lensatic Military Compass" data-price="29.99" data-image="Images/cnav3.jpg">
+                                                <img src="Images/cnav3.jpg" alt="Military Compass">
+                                                <div class="product-info">
+                                                    <h3>Lensatic Military Compass</h3>
+                                                    <p class="price">$29.99 <span class="original">$35.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                                        <span>(61)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-17%</div>
+                                            </div>
+
+                                            <!-- GPS 1 -->
+                                            <div class="product-card1" data-id="48" data-name="Handheld GPS Navigator" data-price="179.99" data-image="Images/cnav4.jpg">
+                                                <img src="Images/cnav4.jpg" alt="Handheld GPS">
+                                                <div class="product-info">
+                                                    <h3>Handheld GPS Navigator</h3>
+                                                    <p class="price">$179.99 <span class="original">$199.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                                        <span>(105)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-10%</div>
+                                            </div>
+
+                                            <!-- GPS 2 -->
+                                            <div class="product-card1" data-id="49" data-name="GPS Tracker with Maps" data-price="229.99" data-image="Images/cnav6.jpg">
+                                                <img src="Images/cnav6.jpg" alt="GPS Tracker">
+                                                <div class="product-info">
+                                                    <h3>GPS Tracker with Maps</h3>
+                                                    <p class="price">$229.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(78)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Utility Cable -->
+                                            <div class="product-card1" data-id="50" data-name="Multi-Use Utility Cable" data-price="14.99" data-image="Images/crope1.jpg">
+                                                <img src="Images/crope1.jpg" alt="Utility Cable">
+                                                <div class="product-info">
+                                                    <h3>Multi-Use Utility Cable</h3>
+                                                    <p class="price">$14.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(32)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- First Aid Kit 1 -->
+                                            <div class="product-card1" data-id="51" data-name="Basic First Aid Kit" data-price="39.99" data-image="Images/caid1.jpg">
+                                                <img src="Images/caid1.jpg" alt="Basic First Aid Kit">
+                                                <div class="product-info">
+                                                    <h3>Basic First Aid Kit</h3>
+                                                    <p class="price">$39.99 <span class="original">$49.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(44)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">SAVE 20%</div>
+                                            </div>
+
+                                            <!-- First Aid Kit 2 -->
+                                            <div class="product-card1" data-id="52" data-name="Premium First Aid Kit" data-price="69.99" data-image="Images/caid2.jpg">
+                                                <img src="Images/caid2.jpg" alt="Premium First Aid Kit">
+                                                <div class="product-info">
+                                                    <h3>Premium First Aid Kit</h3>
+                                                    <p class="price">$69.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                                        <span>(59)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Emergency Whistle -->
+                                            <div class="product-card1" data-id="53" data-name="Emergency Survival Whistle" data-price="9.99" data-image="Images/caid3.jpg">
+                                                <img src="Images/caid3.jpg" alt="Emergency Whistle">
+                                                <div class="product-info">
+                                                    <h3>Emergency Survival Whistle</h3>
+                                                    <p class="price">$9.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(22)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+ 
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+
+                            <hr class="custom-hr">
+                        <!-- Scrollable Product Row7-->
+                            <div class="scrollable-products py-5">
+                                <div class="container">
+                                    <h2 class="mb-4" id="survival-tools">Survival & Multi Tools</h2>
+                                    <div class="product-scroller">
+                                    <div class="product-row">
+                                                    <!-- Flashlight -->
+                                            <div class="product-card1" data-id="54" data-name="LED Flashlight" data-price="24.99" data-image="Images/clight7.jpg">
+                                                <img src="Images/clight7.jpg" alt="LED Flashlight">
+                                                <div class="product-info">
+                                                    <h3>LED Flashlight</h3>
+                                                    <p class="price">$24.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(39)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Headlamp -->
+                                            <div class="product-card1" data-id="55" data-name="Rechargeable Headlamp" data-price="34.99" data-image="Images/clight3.jpg">
+                                                <img src="Images/clight3.jpg" alt="Rechargeable Headlamp">
+                                                <div class="product-info">
+                                                    <h3>Rechargeable Headlamp</h3>
+                                                    <p class="price">$34.99 <span class="original">$42.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(57)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">SALE</div>
+                                            </div>
+
+                                            <!-- Camping Stove -->
+                                            <div class="product-card1" data-id="56" data-name="Portable Camping Stove" data-price="49.99" data-image="Images/cstove1.jpg">
+                                                <img src="Images/cstove1.jpg" alt="Camping Stove">
+                                                <div class="product-info">
+                                                    <h3>Portable Camping Stove</h3>
+                                                    <p class="price">$49.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(91)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Cooler Box -->
+                                            <div class="product-card1" data-id="57" data-name="Insulated Cooler Box" data-price="69.99" data-image="Images/campcooler2.jpg">
+                                                <img src="Images/campcooler2.jpg" alt="Cooler Box">
+                                                <div class="product-info">
+                                                    <h3>Insulated Cooler Box</h3>
+                                                    <p class="price">$69.99 <span class="original">$89.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                                        <span>(66)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">-22%</div>
+                                            </div>
+
+                                            <!-- Water Purifier -->
+                                            <div class="product-card1" data-id="58" data-name="Portable Water Purifier" data-price="44.99" data-image="Images/cwaterp2.jpg">
+                                                <img src="Images/cwaterp2.jpg" alt="Water Purifier">
+                                                <div class="product-info">
+                                                    <h3>Portable Water Purifier</h3>
+                                                    <p class="price">$44.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(48)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Camping Chair 1 -->
+                                            <div class="product-card1" data-id="59" data-name="Folding Camping Chair" data-price="39.99" data-image="Images/cchair5.jpg">
+                                                <img src="Images/cchair5.jpg" alt="Camping Chair">
+                                                <div class="product-info">
+                                                    <h3>Folding Camping Chair</h3>
+                                                    <p class="price">$39.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                                        <span>(51)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Camping Chair 2 -->
+                                            <div class="product-card1" data-id="60" data-name="High-Back Camp Chair" data-price="49.99" data-image="Images/cchair7.jpg">
+                                                <img src="Images/cchair7.jpg" alt="High-Back Camp Chair">
+                                                <div class="product-info">
+                                                    <h3>High-Back Camp Chair</h3>
+                                                    <p class="price">$49.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(34)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Foldable Table -->
+                                            <div class="product-card1" data-id="61" data-name="Foldable Camp Table" data-price="59.99" data-image="Images/cchair8.jpg">
+                                                <img src="Images/cchair8.jpg" alt="Foldable Camp Table">
+                                                <div class="product-info">
+                                                    <h3>Foldable Camp Table</h3>
+                                                    <p class="price">$59.99</p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(29)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Binocular -->
+                                            <div class="product-card1" data-id="62" data-name="Compact Binoculars" data-price="79.99" data-image="Images/cbino1.jpg">
+                                                <img src="Images/cbino1.jpg" alt="Compact Binoculars">
+                                                <div class="product-info">
+                                                    <h3>Compact Binoculars</h3>
+                                                    <p class="price">$79.99 <span class="original">$99.99</span></p>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                                        <span>(42)</span>
+                                                    </div>
+                                                    <button class="add-to-cart">Add to Cart</button>
+                                                </div>
+                                                <div class="sale-badge">LIMITED</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                            </div>
+                            </div>
+                           
+                            <hr class="custom-hr1">
+                            <div class="slideshow-container1" id="slideshow">
+                                <div class="slide1">
+                                <img src="Images/ctent.jpg" alt="Slide 1" >
+                                <div class="caption">
+                                    <h5>Tents & Shelter</h5>
+                                    <p>Durable tents for all conditions.</p>
+                                </div>
+                                </div>
+                                <div class="slide1">
+                                <img src="Images/cstove4.jpg" alt="Slide 2" >
+                                <div class="caption">
+                                    <h5>Cooking Gear</h5>
+                                    <p>Cook delicious meals outdoors.</p>
+                                </div>
+                                </div>
+                                <div class="slide1">
+                                <img src="Images/backhik10.jpg" alt="Slide 3" >
+                                <div class="caption">
+                                    <h5>Backpacks</h5>
+                                    <p>Lightweight and ergonomic designs.</p>
+                                </div>
+                                </div>
+                                <div class="slide1">
+                                <img src="Images/sleep6.jpg" alt="Slide 4" >
+                                <div class="caption">
+                                    <h5>Sleeping Bags</h5>
+                                    <p>Stay warm on chilly nights.</p>
+                                </div>
+                                </div>
+                                <div class="slide1">
+                                    <img src="Images/clight5.jpg" alt="Slide 5" >
+                                    <div class="caption">
+                                    <h5>Lighting Equipment</h5>
+                                    <p>Lanterns to brighten your campsite at night.</p>
+                                    </div>
+                                </div>
+                                <div class="slide1">
+                                    <img src="images/csafe1.jpg" alt="Slide 6" >
+                                    <div class="caption">
+                                    <h5>Safety & First Aid</h5>
+                                    <p>Essential kits and tools for handling outdoor emergencies.</p>
+                                    </div>
+                                </div>
+                                <div class="slide1">
+                                    <img src="Images/cnav1.jpg" alt="Slide 7" >
+                                    <div class="caption">
+                                    <h5>Navigation Tools</h5>
+                                    <p>Reliable compasses and GPS devices to keep you on track.</p>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <script>
+                                    const slideshow = document.getElementById("slideshow");
+                                    let isPaused = false;
+                                    
+                                    // Clone slides to simulate infinite loop
+                                    for (let i = 0; i < 4; i++) {
+                                    const clone = slideshow.children[i].cloneNode(true);
+                                    slideshow.appendChild(clone);
+                                    }
+                                    
+                                    let scrollPosition = 0;
+                                    const slideWidth = 320; // slide width + margin
+                                    
+                                    function autoSlide() {
+                                    if (!isPaused) {
+                                        scrollPosition += 1;
+                                        if (scrollPosition >= slideWidth * 4) {
+                                        scrollPosition = 0;
+                                        slideshow.scrollLeft = 0;
+                                        } else {
+                                        slideshow.scrollLeft = scrollPosition;
+                                        }
+                                    }
+                                    requestAnimationFrame(autoSlide);
+                                    }
+                                    
+                                    slideshow.addEventListener("mouseenter", () => (isPaused = true));
+                                    slideshow.addEventListener("mouseleave", () => (isPaused = false));
+                                    slideshow.addEventListener("touchstart", () => (isPaused = true));
+                                    slideshow.addEventListener("touchend", () => (isPaused = false));
+                                    
+                                    // Start animation
+                                    autoSlide();
+                            </script>
+                     
+                    <footer class="site-footer ">
+                        <div class="footer-bottom text-center">
+                            <p>&copy; 2025 Easy Camping. All rights reserved.</p>                     
+                        </div>
+                    </footer>   
+                    
+                <!-- Scripts -->
+                    <script src="js/bootstrap.bundle.min.js"></script>
+                    <script src="script.js"></script>
+                <!-- Bootstrap JS Bundle with Popper.js -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+
+
+</body>
+</html>
