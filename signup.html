@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign-Up Form</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="signup-page">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-tree me-2"></i>Easy Camping</a>
+
+      <form class="d-flex search-bar">
+        <div class="input-wrapper">
+          <input class="form-control" type="search" placeholder="Search for great gear & clothing" />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+      </form>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="CampingIndex.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Sale&Product.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Sale&Product.html">All Products</a></li>
+              <li><a class="dropdown-item" href="Sale&Product.html#camping-tent">Tents & Shelters</a></li>
+              <li><a class="dropdown-item" href="Sale&Product.html#sleeping-gear">Sleeping Gear</a></li>
+              <li><a class="dropdown-item" href="Sale&Product.html#camping-backpack">Backpacks & Bags</a></li>
+              <li><a class="dropdown-item" href="Sale&Product.html#clothing-men">Men-Wear</a></li>
+              <li><a class="dropdown-item" href="Sale&Product.html#clothing-women">Women-Wear</a></li>
+              <li><a class="dropdown-item" href="Sale&Product.html#camping-safety">Navigation & Safety</a></li>
+              <li><a class="dropdown-item" href="Sale&Product.html#survival-tools">Survival Tools</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-3"><a class="nav-link" href="Login.html"><i class="fas fa-user"></i></a></li>
+          <li class="nav-item ms-3">
+            <a class="nav-link" href="cart.html">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sign-Up Form -->
+  <div class="signup-container">
+    <div class="signup-card">
+      <div class="signup-header">
+        <h1>Create Account</h1>
+        <p>Join the adventure with Easy Camping</p>
+      </div>
+
+      <a href="#" class="google-signin-btn">
+        <img src="Images/google-logo.png" alt="Google logo" class="google-logo" />
+        <span>Sign up with Google</span>
+      </a>
+
+      <div class="divider"><span>or</span></div>
+
+      <form class="signup-form">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <div class="input-with-icon">
+            <i class="fas fa-user"></i>
+            <input type="text" id="fullname" placeholder="Enter your full name" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="input-with-icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-field">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" id="password" placeholder="••••••••" required />
+            <button type="button" class="toggle-password">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <div class="password-field">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" id="confirm-password" placeholder="••••••••" required />
+            <button type="button" class="toggle-password">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="signup-btn">Create Account</button>
+      </form>
+
+      <div class="login-link">
+        Already have an account? <a href="Login.html">Sign In</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
