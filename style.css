@@ -2,6 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color:#ededed;
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
