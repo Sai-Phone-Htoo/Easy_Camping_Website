@@ -81,6 +81,10 @@ html{
     }
 }
 
+         #User-icon i,
+        #Cart-icon i {
+          font-size: 1.1rem;
+        } 
 .navbar {
     background-color: #2671ae!important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -103,6 +107,7 @@ html{
     font-weight: 250;
     padding: 12px 13px;
     transition: color 0.3s ease;
+    
 }
 
 .navbar-nav .nav-link::after {
@@ -174,7 +179,7 @@ html{
     border-radius: 10px;
     transition: all 0.3s ease;
     align-items: center;
-     width: 400px;
+     width: 340px;
     height: 38px;
 }
 
