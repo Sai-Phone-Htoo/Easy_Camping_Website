@@ -1020,7 +1020,7 @@ h2 {
 
 /* Sign Up Link */
 .signup-link {
-    font-size: 14px;
+   
     color: #6c757d;
 }
 
@@ -1583,3 +1583,177 @@ h2 {
       min-width: 80%;
     }
   } 
+
+
+
+  /* Base Styling */
+body.signup-page{
+   
+    padding-top: 80px; 
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 20px;
+}
+
+.signup-card{
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Header */
+.signup-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2a9d8f;
+    margin-bottom: 10px;
+}
+
+.signup-header p{
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Google Sign-in Button */
+.google-signin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #444;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+
+.google-signin-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.google-logo {
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider span {
+    background: #fff;
+    padding: 0 10px;
+    color: #888;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #ccc;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+/* Input Fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-with-icon,
+.password-field {
+    position: relative;
+}
+
+.input-with-icon input,
+.password-field input {
+    width: 100%;
+    padding: 10px 40px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.input-with-icon i,
+.password-field .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.password-field button.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+}
+
+/* Buttons */
+.signup-btn{
+    width: 100%;
+    padding: 12px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.signup-btn:hover, .login-btn:hover {
+    background-color: #227a6f;
+}
+
+/* Links */
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #2a9d8f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Remember me & forgot password */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
