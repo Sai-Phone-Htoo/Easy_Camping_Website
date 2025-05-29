@@ -92,7 +92,6 @@ html{
     font-size: 2rem;
     font-weight: 600;
     color:#f1f1f1!important;
-/*    font-family:'Algerian', sans-serif;*/
     margin-left: 15px;
 
 }
@@ -151,6 +150,9 @@ html{
     }
 }
 
+
+
+
 /* ====== Search Bar Styling ====== */
 .search-bar {
     position: relative;
@@ -168,12 +170,11 @@ html{
     border:solid;
     color:#6e6e6e ;
     padding: 11px 2px 8px 65px;
-    border-radius: 12px;
-
+    border-radius: 10px;
     transition: all 0.3s ease;
     align-items: center;
      width: 400px;
-    height: 35px;
+    height: 38px;
 }
 
 .search-bar .form-control::placeholder {
@@ -341,29 +342,47 @@ display: flex;
 }
 
 
+/* Responsive */
 @media (max-width: 768px) {
-    .slideshow-container {
-        height: 350px;
+    .slide {
+        height: 60vh;
     }
-    
+
+    .slide-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .slide-content p {
+        font-size: 1rem;
+    }
+
     .slide-content {
+        padding: 1rem;
         left: 5%;
-        max-width: 90%;
-        padding: 1.2rem;
+        bottom: 15%;
     }
-    
-    .slide h3 {
+
+    .slide-arrow {
+        padding: 0.6rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide {
+        height: 50vh;
+    }
+
+    .slide-content h1 {
         font-size: 1.5rem;
     }
-    
-    .slide p {
-        font-size: 1rem;
+
+    .slide-content p {
+        font-size: 0.9rem;
     }
-    
-    .slide-arrow {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
+
+    .slide-content {
+        bottom: 10%;
     }
 }
 
@@ -819,6 +838,28 @@ h2 {
 .product-scroller::-webkit-scrollbar {
     display: none;
 }
+/* Responsive tweaks */
+
+@media (max-width: 768px) {
+    .product-row {
+      gap: 0.75rem;
+    }
+    .product-card1 {
+      width: 180px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-card1 {
+      width: 140px;
+    }
+    .product-info h3 {
+      font-size: 1rem;
+    }
+    .price {
+      font-size: 0.9rem;
+    }
+  }
 
 
 /* Login Page Styles */
@@ -858,9 +899,9 @@ h2 {
 }
 
 .login-header h1 {
-    font-size: 30px;
-    margin-bottom: 5px;
-    color: #2671ae;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2a9d8f;
 }
 
 .login-header p {
@@ -1010,7 +1051,7 @@ h2 {
 
 .remember-me label {
     font-size: 14px;
-    color: #6c757d;
+    color: #11883f;
     margin-bottom: 0;
     cursor: pointer;
 }
@@ -1046,7 +1087,7 @@ h2 {
 
 /* Sign Up Link */
 .signup-link {
-   
+    
     color: #6c757d;
 }
 
@@ -1066,6 +1107,8 @@ h2 {
         padding: 30px 20px;
     }
 }
+
+
 
 /* Password Field Styles */
 .password-field {
@@ -1429,7 +1472,34 @@ h2 {
   padding: 50px 20px;
 
 }
-
+/* Responsive heading for tablets and smaller */
+@media (max-width: 768px) {
+    .about-hero h1 {
+      font-size: 2.25rem;
+    }
+  }
+  
+  /* Responsive heading for mobile phones */
+  @media (max-width: 480px) {
+    .about-hero h1 {
+      font-size: 1.75rem;
+    }
+  }
+/* Responsive paragraph for tablets and smaller */
+@media (max-width: 768px) {
+    .about-hero p {
+      font-size: 1.1rem;
+      max-width: 90%;       /* More flexible width */
+    }
+  }
+  
+  /* Responsive paragraph for mobile phones */
+  @media (max-width: 480px) {
+    .about-hero p {
+      font-size: 1rem;
+      max-width: 95%;
+    }
+  }  
 .about-content h2 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -1602,14 +1672,41 @@ h2 {
     font-size: 0.9rem;
     color: #666;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .slide1 {
-      min-width: 80%;
-    }
-  } 
+ 
 
+  /* Responsive styles */
+@media (max-width: 768px) {
+    .carousel-caption {
+      bottom: 5%;
+      padding: 10px;
+    }
+    .slide1 {
+        min-width: 80%;
+      }
+  
+    .carousel-caption h1 {
+      font-size: 1.5rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-caption {
+      font-size: 0.85rem;
+      bottom: 2%;
+    }
+  
+    .carousel-caption h1 {
+      font-size: 1.2rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 0.8rem;
+    }
+  }
 
 
   /* Base Styling */
@@ -1782,4 +1879,3 @@ body.signup-page{
     align-items: center;
     margin-bottom: 20px;
 }
-
