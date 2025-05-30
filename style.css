@@ -399,7 +399,7 @@ display: flex;
 /* Discount Banner Styles */
 .discount-banner {
     width: 100%;
-    background:linear-gradient(to right, #656565, #919191);
+    background:linear-gradient(to right, #2b2b2b, #919191);
     padding: 25px 25px 25px 0px;
     font-weight: 400;
 }
