@@ -86,7 +86,7 @@ html{
           font-size: 1.1rem;
         } 
 .navbar {
-    background-color: #2671ae!important;
+    background:linear-gradient(to bottom, #01389e, #0059ff)!important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 8px 0;
     border-bottom: 10px;
@@ -399,7 +399,7 @@ display: flex;
 /* Discount Banner Styles */
 .discount-banner {
     width: 100%;
-    background-color: #646464;
+    background:linear-gradient(to right, #656565, #919191);
     padding: 25px 25px 25px 0px;
     font-weight: 400;
 }
@@ -688,7 +688,8 @@ h2 {
     /* ====== Footer ====== */
     
 .site-footer{
-        background-color:#00134d;
+       
+    background:linear-gradient(to bottom, #01389e, #0059ff);     
         color: white;
         padding: 10px 0;
         font-size: 1rem;
@@ -817,7 +818,7 @@ h2 {
 .add-to-cart {
     width: 100%;
     padding: 8px;
-    background: #2a9d8f;
+    background:linear-gradient(to bottom, #2a9d8f, #8dc000);
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
@@ -826,7 +827,7 @@ h2 {
 }
 
 .add-to-cart:hover {
-    background: #21867a;
+    background: #17ab00;
 }
 
 .sale-badge {
