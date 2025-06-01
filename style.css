@@ -86,7 +86,7 @@ html{
           font-size: 1.1rem;
         } 
 .navbar {
-    background:linear-gradient(to bottom, #01389e, #0059ff)!important;
+    background:linear-gradient(to bottom, #365d71, #16222a)!important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 8px 0;
     border-bottom: 10px;
@@ -109,6 +109,12 @@ html{
     transition: color 0.3s ease;
     
 }
+.nav-link.active {
+    font-weight: 900;
+    color: #17a2b8 !important; /* Bootstrap primary color */
+   
+  }
+  
 
 .navbar-nav .nav-link::after {
     content: "";
@@ -117,12 +123,12 @@ html{
     bottom: 0;
     height: 1.5px;
     width: 0;
-    background-color: #00aaff; /* Hover underline color */
+    background-color: #17a2b8; /* Hover underline color */
     transition: width 0.5s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #00aaff; /* Hover text color */
+    color: #17a2b8; /* Hover text color */
 }
 
 .navbar-nav .nav-link:hover::after {
@@ -215,7 +221,6 @@ html{
 
 
 /*View Photo*/
-/* Slideshow Styles */
 .slideshow-section {
     position: relative;
     margin: 2rem 0rem;
@@ -347,6 +352,11 @@ display: flex;
     transform: scale(1.2);
 }
 
+.slide-btn
+{
+    color: white;
+    background-color: #1a5b8e;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -394,6 +404,11 @@ display: flex;
 
 
 
+/* Slideshow Styles */
+ 
+
+
+
 
 
 /* Discount Banner Styles */
@@ -419,7 +434,7 @@ display: flex;
 
 .discount-btn {
     background-color: #f1f1f1;
-    color: #2671ae;
+    color: #365d71;
     padding: 4px 12px;
     border-radius: 15px;
     font-weight: 700;
@@ -521,7 +536,7 @@ a.text-decoration-none {
 h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2671ae;
+    color: #00679b;
 }
 
 #Imageacti img {
@@ -548,16 +563,16 @@ h2 {
 }
 
 .btn-primary {
-    background-color: #2671ae;
-    border-color: #1e79c4;
+    background-color: #009557;
+    border-color: rgb(0, 109, 2);
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 8px;
 }
 
 .btn-primary:hover {
-    background-color: #1879c3;
-    border-color: #1a5b8e;
+    background-color: #00b66a;
+    border-color: #00ac65;
 }
 
 /* Image Styling */
@@ -586,7 +601,7 @@ h2 {
 .featured-campsites h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2671ae;
+    color: #00679b;
 }
 
 /* Campsite Cards */
@@ -630,7 +645,7 @@ h2 {
 .featured-campsites2 h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2671ae;
+    color: #00679b;
 }
 
 /* Text Section */
@@ -689,7 +704,7 @@ h2 {
     
 .site-footer{
        
-    background:linear-gradient(to bottom, #01389e, #0059ff);     
+    background:linear-gradient(to bottom,  #365d71, #16222a);     
         color: white;
         padding: 10px 0;
         font-size: 1rem;
@@ -1063,16 +1078,6 @@ h2 {
     cursor: pointer;
 }
 
-.forgot-password {
-    font-size: 14px;
-    color: #2a9d8f;
-    text-decoration: none;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
 /* Login Button */
 .login-btn {
     width: 100%;
@@ -1402,6 +1407,7 @@ h2 {
 
 .btn-checkout:hover {
     background: #27ae60;
+    color: #ffffff;
 }
 
 .payment-methods {
@@ -1886,3 +1892,135 @@ body.signup-page{
     align-items: center;
     margin-bottom: 20px;
 }
+
+
+
+.card11-container {
+    margin-top: 100px;
+  }
+  
+  .card11-wrapper {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card11-image-space {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .card11-img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .card11-title {
+   color: #444;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  
+  .card11-text {
+    color: #444;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-family: 'Georgia', serif;
+  }
+  
+#Card-Mountain{
+    background: linear-gradient(to right, #f8fbb7, #ffffff);
+}
+
+
+#Card-Lake{
+    background:linear-gradient(to right, #82b9dd, #ffffff);
+}
+#Card-Forest{
+    background:linear-gradient(to right, #7dcd95, #ffffff);
+}
+#Card-Forest{
+    background:linear-gradient(to right, #7dcd95, #ffffff);
+}
+#Card-Night{
+    background:linear-gradient(to right, #617f9c, #ffffff);
+}
+#Card-Snow{
+    background:linear-gradient(to right, #aeaeae, #ffffff);
+}
+#Card-Sun{
+    background:linear-gradient(to right, #c59767, #ffffff);
+}
+
+
+
+
+.payment-container {
+    background-color: #fff;
+    border-radius: 16px;
+  }
+    
+  .alert-success {
+    background-color: #e9f7ef;
+    border: 1px solid #d1e7dd;
+  }
+  
+  .form-label {
+    font-weight: 500;
+  }
+  
+  .form-check-label {
+    font-weight: 500;
+  }
+  
+  .btn-success {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+
+/* Background gradient for the full page */
+#pay1 {
+    background: linear-gradient(to right, #d4fc79, #83f192);
+    margin-top: 90px;
+  }
+#pay2{
+    background: linear-gradient(to right, #d4fc79, #83f192);
+}
+  
+  /* Success card styling */
+  .success-card {
+    max-width: 450px;
+    border-radius: 16px;
+    background-color: #ffffff;
+  }
+  
+  /* Checkmark icon styling */
+  .check-icon {
+    align-items: center;
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-top: -10px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .pay-success{
+    align-items: center;
+  }
+  .btn-success {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+
+  #pay{
+    font-size:2rem;
+  }
