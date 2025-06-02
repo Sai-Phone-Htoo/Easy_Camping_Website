@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body id="pay2">
+  <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+    <div class="payment-container shadow p-4 rounded-4 bg-white w-100" style="max-width: 550px;">
+      
+      <!-- Back link -->
+      <div class="mb-3">
+        <a href="cart.html" class="text-decoration-none text-dark d-flex align-items-center">
+          <i class="fas fa-arrow-left me-2"></i> Back to Cart
+        </a>
+      </div>
+
+      <h2 class="text-center mb-4 fw-bold">Payment Information</h2>
+
+      <ul id="order-summary" class="list-group mb-3">
+        <!-- JS will populate cart items here -->
+      </ul>
+      
+      <h4>Total: <span id="order-total">$0.00</span></h4>
+      
+
+      <!-- Payment Method (Radio buttons) -->
+      <div class="mb-4">
+        <label class="form-label fw-semibold mb-2">Select Payment Method:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="credit" checked>
+          <label class="form-check-label" for="creditCard">Credit / Debit Card</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal">
+          <label class="form-check-label" for="paypal">PayPal</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="paymentMethod" id="applepay" value="applepay">
+          <label class="form-check-label" for="applepay">Apple Pay</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="paymentMethod" id="googlepay" value="googlepay">
+          <label class="form-check-label" for="googlepay">Google Pay</label>
+        </div>
+      </div>
+
+      <!-- Card Payment Form -->
+      <form id="payment-form">
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" required >
+        </div>
+
+        <div class="mb-3">
+          <label for="cardNumber" class="form-label">Card Number</label>
+          <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required >
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="expiry" class="form-label">Expiry Date</label>
+            <input type="text" class="form-control" id="expiry" placeholder="MM/YY" required >
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cvv" placeholder="123" required >
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address" class="form-label">Billing Address</label>
+          <input type="text" class="form-control" id="address" placeholder="123 Main St" required >
+        </div>
+
+        <button type="submit" class="btn btn-success w-100 py-2 fw-semibold">Pay Now</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="payment.js"></script>
+</body>
+</html>
