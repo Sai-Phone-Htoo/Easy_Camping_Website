@@ -28,6 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Clear cart
         localStorage.removeItem("easyCampingCart");
         // Redirect to success page
-        window.location.href = "payment-success.html";
+        window.location.href = "Payment-success.html";
     });
 });
