@@ -211,7 +211,7 @@ html{
 .dropdown-menu {
     border: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-     background-color:#edeef9;
+    background-color:#ffffff;
 }
 
 .dropdown-item:hover {
@@ -857,8 +857,10 @@ h2 {
     font-weight: bold;
 }
 /* Hide scrollbar but keep functionality */
-.product-scroller::-webkit-scrollbar {
-    display: none;
+.product-scroller {
+    -ms-overflow-style: auto;
+    scrollbar-width: auto;
+    scrollbar-color: #a7a7a7 #dbdbdb;
 }
 /* Responsive tweaks */
 
