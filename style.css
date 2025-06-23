@@ -103,7 +103,7 @@ html{
 
 .navbar-nav .nav-link {
     position: relative;
-    color: #ffffff !important; /* Default link color */
+    color: #bababa !important; /* Default link color */
     font-weight: 250;
     padding: 12px 13px;
     transition: color 0.3s ease;
